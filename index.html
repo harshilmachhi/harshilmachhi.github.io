@@ -7,32 +7,30 @@
 
     <title>Harshil Machhi</title>
 
+
     <link rel = "stylesheet" href = "style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="styleshet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
 <body>
-    <div id = "home-section"></div>
-    </div>
+
     <section class = "header">
+        <div id = "home-section"></div>
         <nav>
             <a href = "home.html"><img src="Images/logo.png"></a>
-
+            <i class="fa fa-bars" style="color: black" onclick = "showMenu()"></i>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
-
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="#home-section">HOME</a></li>
-                    <li><a href="#project-section">PROJECTS</a></li>
-                    <li><a href="#about-section">ABOUT</a></li>
-                    <li><a href="#contact-section">CONTACT</a></li>
-
+                    <li><a href="#home-section" onclick="hideMenu()">HOME</a></li>
+                    <li><a href="#project-section" onclick="hideMenu()">PROJECTS</a></li>
+                    <li><a href="#about-section" onclick="hideMenu()">ABOUT</a></li>
+                    <li><a href="#contact-section" onclick="hideMenu()">CONTACT</a></li>
                 </ul>
-
             </div>
+            
         </nav>
     <div class="text-box">
         <h1>Harshil Machhi</h1>
@@ -63,8 +61,8 @@
             <h4>FitAid</h4>                
             <p>Calculate your one rep max and create your personalized workout routine here!</p>
             <a href="https://github.com/harshilmachhi/FitAid" class = "github-button">On GitHub</a>
-
         </div>
+    </div>
     
    </section>
 
@@ -97,7 +95,6 @@
         </div>
         <div class = "aboot">
             <h3>Languages 📜</h3>
-            <!-- write in a bullet pointed list-->
             <ul>
                 <li>Java</li>
                 <li>Python</li>
@@ -106,25 +103,46 @@
                 <li>C</li>
             </ul>
         </div>   
-
     </div>
    </section>
 
    <section class = "contact">
 
     <div id = "bottom-border"></div>
+    <div id = "contact-section"></div>
     <footer>
         <h1>CONNECT 🔗</h1>
         <div class="contact-section">
+            
           <a href="mailto:harshilmachhi18@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
           <a href="https://github.com/harshilmachhi" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/harshil-machhi-216623219/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-      </footer>
-            
-        </div>
 
-   </section>
+        </div>
+    </footer>
+
+    </section>
+
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu() {
+            navLinks.style.visibility = "visible";
+        }
+        
+        function hideMenu() {
+            navLinks.style.visibility = "hidden";
+        }
+        
+        // var menuIcon = document.querySelector(".fa-bars");
+        // var closeIcon = document.querySelector(".fa-times");
+
+        // menuIcon.addEventListener("click", showMenu);
+        // closeIcon.addEventListener("click", hideMenu);
+
+    </script>
+
 
 </body>
 </html>
