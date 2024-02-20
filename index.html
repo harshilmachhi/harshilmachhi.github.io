@@ -27,14 +27,16 @@
                     <li><a href="#home-section" onclick="hideMenu()">HOME</a></li>
                     <li><a href="#project-section" onclick="hideMenu()">PROJECTS</a></li>
                     <li><a href="#about-section" onclick="hideMenu()">ABOUT</a></li>
+                    <li><a href="gallery.html" onclick="hideMenu()">GALLERY</a></li>
                     <li><a href="#contact-section" onclick="hideMenu()">CONTACT</a></li>
+
                 </ul>
             </div>
             
         </nav>
     <div class="text-box">
         <h1>Harshil Machhi</h1>
-        <p>Junior majoring in Computer Science & Data Science at <br>The Rutgers University-New Brunswick</p>
+        <p>Junior majoring in Computer Science & Data Science at <br>The Rutgers University-New Brunswick <br> <br> <br> Incoming Software Engineer Intern @ Barclays</p>
 
         
         <a href="RESUME1.pdf" class="hero-btn">RESUME</a>
@@ -71,7 +73,7 @@
     
    </section>
 
-   
+
 
    <!----About Section ----> 
 
@@ -79,13 +81,13 @@
     <div id = "about-section"></div>
     <h1><b>ABOUT ME 👋</h1>
     <div class = "title-line"></div>
-        <div class = "image-container">
-            <img src = "me2.png" style = "float: left; margin-right: 10px;">
+        <div class = "profile-container">
+            <img src="Images/me.jpg" style = "float: left; clear: both; margin-right: 10px;">
          </div>
     <div class = "row">
         <div class = "aboot">
             <h3>Who I am</h3>
-            <p>I am currently a Junior at the Rutgers University-New Brunswick majoring in Computer Science & Data Science anticipating graduation in May 2025. I am actively on the search for an internship for the upcoming 2024 summer.</p>
+            <p>I am currently a Junior at the Rutgers University-New Brunswick majoring in Computer Science & Data Science anticipating graduation in May 2025. </p>
         </div>
         <div class = "aboot">
             <h3>Hobbies 🏋️‍♂️</h3>
@@ -106,7 +108,7 @@
                 <li>HTML & CSS</li>
                 <li>JavaScript</li>
                 <li>C</li>
-                <li>PHP</li>
+                <li></li>
             </ul>
         </div>   
     </div>
@@ -147,7 +149,29 @@
         // menuIcon.addEventListener("click", showMenu);
         // closeIcon.addEventListener("click", hideMenu);
 
+
+        document.addEventListener('DOMContentLoaded', () => {
+        const videos = document.querySelectorAll('.gallery-video');
+
+        videos.forEach(video => {
+            video.addEventListener('mouseenter', () => video.play());
+            video.addEventListener('mouseleave', () => video.pause());
+        });
+
+        const audioButtons = document.querySelectorAll('.toggle-audio');
+
+        audioButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const video = this.previousElementSibling;
+                video.muted = !video.muted;
+                this.textContent = video.muted ? '🔊' : '🔇';
+            });
+        });
+    });
+
+
     </script>
+
 
 
 </body>

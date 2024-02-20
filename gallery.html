@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="gallery">
+    <h2 class="gallery-title">HOBBIES</h2>
+    <div class="gallery-grid">
+        <!-- Repeat this block for each image in your gallery -->
+        <div class="gallery-item">
+            <img src="Images/ski.jpg" alt="ski">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/travel.jpg" alt="travel">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/photography.jpg" alt="photography">
+        <div class="gallery-video-item">
+            <video class="gallery-video" loop muted>
+                <source src="Images/gym.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-controls">
+                <button class="play-btn">Play</button>
+                <button class="mute-btn">Mute</button>
+            </div>
+        </div>
+</section>
+
+<script>
+document.querySelectorAll('.gallery-video-item').forEach(item => {
+    const video = item.querySelector('.gallery-video');
+    const playBtn = item.querySelector('.play-btn');
+    const muteBtn = item.querySelector('.mute-btn');
+
+    // Play/Pause toggle
+    playBtn.addEventListener('click', () => {
+        if (video.paused) {
+            video.play();
+            playBtn.textContent = 'Pause';
+        } else {
+            video.pause();
+            playBtn.textContent = 'Play';
+        }
+    });
+
+    // Mute/Unmute toggle
+    muteBtn.addEventListener('click', () => {
+        video.muted = !video.muted;
+        muteBtn.textContent = video.muted ? 'Unmute' : 'Mute';
+    });
+
+    // Optional: play on hover and pause on leave
+    item.addEventListener('mouseenter', () => video.play());
+    item.addEventListener('mouseleave', () => video.pause());
+});
+
+
+</script>
+
+</body>
+</html>
