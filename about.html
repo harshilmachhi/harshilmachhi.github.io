@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Harshil Machhi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <i class="fa fa-bars" style="font-size: 32px; color: black" onclick = "showMenu()"></i>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html" onclick="hideMenu()">HOME</a></li>
+                <li><a href="projects.html" onclick="hideMenu()">PROJECTS</a></li>
+                <li><a href="about.html" onclick="hideMenu()">ABOUT</a></li>
+                <li><a href="gallery.html" onclick="hideMenu()">GALLERY</a></li>
+                <li><a href="contact.html" onclick="hideMenu()">CONTACT</a></li>
+
+            </ul>
+        </div>
+        
+    </nav>
+    <!-- Include the navigation bar code here -->
+
+    <!-- About Section -->
+    <section class="about">
+        <h1><b>ABOUT ME 👋</h1>
+        <div class="title-line"></div>
+        <div class="profile-container">
+            <img src="Images/me.jpg" style="float: left; clear: both; margin-right: 10px;">
+        </div>
+        <div class="row">
+            <div class="aboot">
+                <h3>Who I am</h3>
+                <p>I am currently a Junior at the Rutgers University-New Brunswick majoring in Computer Science & Data Science anticipating graduation in May 2025. </p>
+            </div>
+            <div class="aboot">
+                <h3>Hobbies 🏋️‍♂️</h3>
+                <ul>
+                    <li>Travel</li>
+                    <li>Gym</li>
+                    <li>Skiing</li>
+                    <li>Music</li>
+                    <li>Filmmaking</li>
+                </ul>
+            </div>
+            <div class="aboot">
+                <h3>Languages 📜</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>C</li>
+                </ul>
+            </div>   
+        </div>
+    </section>
+
+    <!-- Include the same footer as in your index.html -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+                
+                function showMenu() {
+                    navLinks.style.visibility = "visible";
+                }
+                
+                function hideMenu() {
+                    navLinks.style.visibility = "hidden";
+                }
+                
+        
+            </script>
+    <!-- Include the same scripts as in your index.html -->
+
+</body>
+</html>

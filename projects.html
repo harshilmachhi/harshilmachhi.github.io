@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Harshil Machhi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <i class="fa fa-bars" style="font-size: 32px; color: black" onclick = "showMenu()"></i>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html" onclick="hideMenu()">HOME</a></li>
+                <li><a href="projects.html" onclick="hideMenu()">PROJECTS</a></li>
+                <li><a href="about.html" onclick="hideMenu()">ABOUT</a></li>
+                <li><a href="gallery.html" onclick="hideMenu()">GALLERY</a></li>
+                <li><a href="contact.html" onclick="hideMenu()">CONTACT</a></li>
+
+            </ul>
+        </div>
+        
+    </nav>
+    <!-- Include the navigation bar code here -->
+
+    <!-- Projects Section -->
+    <section class="project">
+        <h1 class="projects-title">PROJECTS 🧑‍💻</h1>
+        <div class="title-line"></div>
+        <div class="project-grid">
+            <!-- Content for each project -->
+            <!-- Project 1 -->
+            <div class="project-box">
+                <h4>FlightLink</h4>
+                <p>Online travel agency for booking flights</p>
+                <a href="https://github.com/harshilmachhi/FlightLink" class="github-button">On GitHub</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-box">
+                <h4>RU Warehouse</h4>
+                <p>Optimizes and manages a theoretical clothing store</p>
+                <a href="https://github.com/harshilmachhi/Warehouse" class="github-button">On GitHub</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-box">
+                <h4>FitAid</h4>
+                <p>Calculate your one rep max and create your personalized workout routine here!</p>
+                <a href="https://github.com/harshilmachhi/FitAid" class="github-button">On GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include the same footer as in your index.html -->
+
+    <!-- Include the same scripts as in your index.html -->
+
+    <script>
+
+var navLinks = document.getElementById("navLinks");
+        
+        function showMenu() {
+            navLinks.style.visibility = "visible";
+        }
+        
+        function hideMenu() {
+            navLinks.style.visibility = "hidden";
+        }
+        
+
+    </script>
+</body>
+</html>

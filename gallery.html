@@ -4,27 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing stylesheet -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
 
+    <nav>
+        <i class="fa fa-bars" style="font-size: 32px; color: black" onclick = "showMenu()"></i>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html" onclick="hideMenu()">HOME</a></li>
+                <li><a href="projects.html" onclick="hideMenu()">PROJECTS</a></li>
+                <li><a href="about.html" onclick="hideMenu()">ABOUT</a></li>
+                <li><a href="gallery.html" onclick="hideMenu()">GALLERY</a></li>
+                <li><a href="contact.html" onclick="hideMenu()">CONTACT</a></li>
+
+            </ul>
+        </div>
+        
+    </nav>
+
 <section class="gallery">
-    <h2 class="gallery-title">HOBBIES</h2>
+    <h2 class="gallery-title">GALLERY</h2>
+    Here are some interesting things about me outside of the academic sector
     <div class="gallery-grid">
         <!-- Repeat this block for each image in your gallery -->
         <div class="gallery-item">
             <img src="Images/ski.jpg" alt="ski">
+            I love to go on ski trips every winter. This is something I recently started a few years ago as I wanted to pick up some new hobbies with my friends and I ended up really falling in love with the sport.
         </div>
         <div class="gallery-item">
             <img src="Images/travel.jpg" alt="travel">
+            Travelling is always my all time favorite thing. Branching out and seeing what the world truly has to offer outside of New Jersey (where I am from) is always an experience.
         </div>
         <div class="gallery-item">
             <img src="Images/photography.jpg" alt="photography">
+            My father introduced me to photography at a very early age and I have carried out my passion for photography till this day which has really brought out the creativity in me and has given me an eye for detail-- allowing me to see things that most people would miss. 
         <div class="gallery-video-item">
             <video class="gallery-video" loop muted>
                 <source src="Images/gym.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            Joining the gym has been one of the best decisions of my life. It has taught me the importance of dedication, hard work, and discipline which has also helped me in so many other aspects of my life.
+
             <div class="video-controls">
                 <button class="play-btn">Play</button>
                 <button class="mute-btn">Mute</button>
@@ -59,6 +84,19 @@ document.querySelectorAll('.gallery-video-item').forEach(item => {
     item.addEventListener('mouseenter', () => video.play());
     item.addEventListener('mouseleave', () => video.pause());
 });
+
+     
+    
+    var navLinks = document.getElementById("navLinks");
+        
+        function showMenu() {
+            navLinks.style.visibility = "visible";
+        }
+        
+        function hideMenu() {
+            navLinks.style.visibility = "hidden";
+        }
+      
 
 
 </script>

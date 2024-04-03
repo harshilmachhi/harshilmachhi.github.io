@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Harshil Machhi</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing stylesheet -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        /* Inline styles for demonstration, ideally move these to your external stylesheet */
+        body {
+            font-family: 'Roboto Mono', monospace; /* This should match your main site's font */
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4; /* or any other background color or image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contact-form-section {
+            width: 90%;
+            max-width: 600px;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .contact-form-section h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea, form button {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            background: #333;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: #555;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <i class="fa fa-bars" style="font-size: 32px; color: black" onclick = "showMenu()"></i>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html" onclick="hideMenu()">HOME</a></li>
+                <li><a href="projects.html" onclick="hideMenu()">PROJECTS</a></li>
+                <li><a href="about.html" onclick="hideMenu()">ABOUT</a></li>
+                <li><a href="gallery.html" onclick="hideMenu()">GALLERY</a></li>
+                <li><a href="contact.html" onclick="hideMenu()">CONTACT</a></li>
+
+            </ul>
+        </div>
+        
+    </nav>
+
+    <section class="contact-form-section">
+        <h1>Contact Me</h1>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+    </section>
+
+    <script>        
+    
+    var navLinks = document.getElementById("navLinks");
+        
+        function showMenu() {
+            navLinks.style.visibility = "visible";
+        }
+        
+        function hideMenu() {
+            navLinks.style.visibility = "hidden";
+        }
+        </script>
+</body>
+</html>
