@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+
     <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-    
+
 
     <title>Harshil Machhi</title>
 
@@ -16,109 +16,139 @@
 
 <body>
 
-    <section class = "header">
-        <div id = "home-section"></div>
-        <nav>
-            <a href = "home.html"><img src="Images/logo.png"></a>
-            <i class="fa fa-bars" style="font-size: 32px; color: black" onclick = "showMenu()"></i>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="#home-section" onclick="hideMenu()">HOME</a></li>
-                    <li><a href="projects.html" onclick="hideMenu()">PROJECTS</a></li>
-                    <li><a href="about.html" onclick="hideMenu()">ABOUT</a></li>
-                    <li><a href="gallery.html" onclick="hideMenu()">GALLERY</a></li>
-                    <li><a href="contact.html" onclick="hideMenu()">CONTACT</a></li>
+<section class = "header">
+    <div id = "home-section"></div>
+    <nav>
+        <a href = "home.html"><img src="Images/logo.png"></a>
+        <i class="fa fa-bars" style="color: black" onclick = "showMenu()"></i>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#home-section" onclick="hideMenu()">HOME</a></li>
+                <li><a href="#project-section" onclick="hideMenu()">PROJECTS</a></li>
+                <li><a href="#about-section" onclick="hideMenu()">ABOUT</a></li>
+                <li><a href="#contact-section" onclick="hideMenu()">CONTACT</a></li>
+            </ul>
+        </div>
 
-                </ul>
-            </div>
-            
-        </nav>
+    </nav>
     <div class="text-box">
         <h1>Harshil Machhi</h1>
-        <p>Junior majoring in Computer Science & Data Science at <br>The Rutgers University-New Brunswick <br> <br> Actively searching for full time Software Engineering specializing in full stack development <br> <br> Incoming Software Engineer Intern @ Barclays</p>
+        <p>Senior majoring in Computer Science & Data Science at <br>The Rutgers University-New Brunswick</p>
+        <p>Actively searching for New Grad Software Engineering opportunities</p>
 
-        
-      
-        <a href="#" class="hero-btn" onclick="togglePDF()">RESUME</a>
-        <iframe id="resumePdf" src="RESUME1.pdf" style="display: none; width:100%; height:600px;" frameborder="0"></iframe>
 
-        <a href="contact.html" class="hero-btn">CONTACT ME</a>
+        <a href="RESUME1.pdf" class="hero-btn">RESUME</a>
+        <a href="mailto:harshilmachhi18@gmail.com" class="hero-btn">EMAIL ME</a>
         <a href="https://github.com/harshilmachhi" class="hero-btn">GITHUB</a>
 
     </div>
-    </section>
+</section>
 
 
-    
-   <section class = "contact">
+<!-- project-->
+<div id = "project-section"></div>
+
+<section class = "project">
+    <h1 class = "projects-title">PROJECTS</h1>
+    <div class = "title-line"></div>
+    <div class = "project-grid">
+        <div class = "project-box">
+            <h4>Trendify.ai</h4>
+            <p>Generate an AI curated playlist for any mood of your choosing!</p>
+            <a href="" class = "github-button">Coming soon</a>
+        </div>
+        <div class = "project-box">
+            <h4>FlightLink</h4>
+            <p>Online travel agency for booking flights</p>
+            <a href="https://github.com/harshilmachhi/FlightLink" class = "github-button">On GitHub</a>
+        </div>
+        <div class = "project-box">
+            <h4>RU Warehouse</h4>
+            <p>Optimizes and manages a theoretical clothing store</p>
+            <a href="https://github.com/harshilmachhi/Warehosue" class = "github-button">On GitHub</a>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!----About Section ---->
+
+<section class = "about">
+    <div id = "about-section"></div>
+    <h1><b>ABOUT ME</h1>
+    <div class = "title-line"></div>
+    <div class = "image-container">
+        <img src = "me2.png" style = "float: left; margin-right: 10px;">
+    </div>
+    <div class = "row">
+        <div class = "aboot">
+            <h3>Who I am</h3>
+            <p>I am currently a Junior at the Rutgers University-New Brunswick majoring in Computer Science & Data Science anticipating graduation in May 2025. I am actively on the search for an internship for the upcoming 2024 summer.</p>
+        </div>
+        <div class = "aboot">
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Travel</li>
+                <li>Gym</li>
+                <li>Skiing</li>
+                <li>Music</li>
+                <li>Filmmaking</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class = "aboot">
+            <h3>Languages</h3>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>C</li>
+                <li>PHP</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class = "contact">
 
     <div id = "bottom-border"></div>
     <div id = "contact-section"></div>
     <footer>
-        <h1>CONNECT 🔗</h1>
+        <h1>CONNECT</h1>
         <div class="contact-section">
-            
-          <a href="mailto:harshilmachhi18@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
-          <a href="https://github.com/harshilmachhi" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/harshil-machhi-216623219/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+            <a href="mailto:harshilmachhi18@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+            <a href="https://github.com/harshilmachhi" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/harshil-machhi-216623219/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 
         </div>
     </footer>
 
-    </section>
+</section>
 
-    <script>
+<script>
 
-        function togglePDF() {
-            var pdf = document.getElementById("resumePdf");
-            if (pdf.style.display === "none") {
-                pdf.style.display = "block";
-            } else {
-                pdf.style.display = "none";
-            }
-        }
-                
-        var navLinks = document.getElementById("navLinks");
-        
-        function showMenu() {
-            navLinks.style.visibility = "visible";
-        }
-        
-        function hideMenu() {
-            navLinks.style.visibility = "hidden";
-        }
-        
-        // var menuIcon = document.querySelector(".fa-bars");
-        // var closeIcon = document.querySelector(".fa-times");
+    var navLinks = document.getElementById("navLinks");
 
-        // menuIcon.addEventListener("click", showMenu);
-        // closeIcon.addEventListener("click", hideMenu);
+    function showMenu() {
+        navLinks.style.visibility = "visible";
+    }
 
+    function hideMenu() {
+        navLinks.style.visibility = "hidden";
+    }
 
-        document.addEventListener('DOMContentLoaded', () => {
-        const videos = document.querySelectorAll('.gallery-video');
+    // var menuIcon = document.querySelector(".fa-bars");
+    // var closeIcon = document.querySelector(".fa-times");
 
-        videos.forEach(video => {
-            video.addEventListener('mouseenter', () => video.play());
-            video.addEventListener('mouseleave', () => video.pause());
-        });
+    // menuIcon.addEventListener("click", showMenu);
+    // closeIcon.addEventListener("click", hideMenu);
 
-        const audioButtons = document.querySelectorAll('.toggle-audio');
-
-        audioButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const video = this.previousElementSibling;
-                video.muted = !video.muted;
-                this.textContent = video.muted ? '🔊' : '🔇';
-            });
-        });
-    });
-
-
-    </script>
-
+</script>
 
 
 </body>
-</html>
